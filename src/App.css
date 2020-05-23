@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    margin-top: 30px;
+	background: linear-gradient(-45deg, #eb896b, #f15e96, #46b9e2, #4bd8b7);
+	background-size: 400% 400%;
+	animation: change 3s ease-in-out infinite;
+}
+
+@keyframes change {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.appTitle{
+  text-align: center;
+  font-family: 'Pangolin', cursive;
+  text-shadow: 2px 2px 5px #180b65;
+  color: #88ccd4;
+}
+.app{
+  width: 400px;
+  margin: auto;
+  background-image: url(ocean.png);
+  height: 600px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 40px 0;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, .35); /*blend-mode lighten works only with transparent white bgcolor */
+  /* overflow-y: scroll; */
+  /*When the todo Lists are beyond the app acontainer, used
+  overflow scroll. But when clicked on last item to delete, It won't delete*/
+}
+.btnAdd{
+  border: none;
+  background: none;
+  font-size: xx-large;
+  color: #a1d66ce8;
+  outline: none;
+  padding: 1px 5px;
+}
+.btnAdd:enabled{
+  color: #74be2a;
+}
+.btnAdd:enabled :hover{
+  color: #61a819;
+}
+.btnDel{
+  border: none;
+  color: #dc0c0ccc;
+  background: none;
+  outline: none;
+  font-size: inherit;
+}
+.btnDel:hover{
+  color: #d11313;
+}
+.inputContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+.inputContainer input{
+  border: 1px solid rgb(184, 179, 179);
+  border-radius: 20px 0px 0px 20px;
+  outline: none;
+  padding-left: 15px;
+  width: 250px;
+}
+.todo{
+  font-family: 'Raleway', sans-serif;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  margin: 5px 40px;
+  padding: 5px 0px;
+  border-radius: 20px;
+  border: 1px solid rgba(76, 76, 197, 0.65);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: whitesmoke;
+}
+.todoItems{
+  width: 250px;}
+.todoItems h2{
+  font-size: inherit;
+  margin: 0;
+}
