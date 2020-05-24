@@ -14,7 +14,6 @@ const App = () => {
     setInput("");
   }
   const delTodo = (value) => {
-    // e.stopPropagation();
     //If needed to confirm before deletion (can do it using react-popup too)
     // if(window.confirm("Are you sure you want to delete this To-do?")){}
       todos.splice(value,1); //Delete the todoitem related to the index
